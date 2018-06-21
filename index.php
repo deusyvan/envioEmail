@@ -13,6 +13,8 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])){
                  "Replay-To: ".$email."\r\n".
                  "X-Mailer: PHP/".phpversion();
     
+    mail($para, $assunto, $corpo, $cabecalho);
+    
     
     
     
