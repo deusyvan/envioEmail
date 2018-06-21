@@ -9,6 +9,12 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])){
     $assunto = "Pergunta do Contato";
     $corpo = "Nome: ".$nome." - E-mail: ".$email." - Mensagem: ".$msg;
     
+    $cabecalho = "From: contato@dfsweb.com.br"."\r\n".
+                 "Replay-To: ".$email."\r\n".
+                 "X-Mailer: PHP/".phpversion();
+    
+    
+    
     
 }
 
