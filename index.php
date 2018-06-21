@@ -15,7 +15,9 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])){
     
     mail($para, $assunto, $corpo, $cabecalho);
     
+    echo "<h2>E-mail enviado com sucesso!</h2>";
     
+    exit;
     
     
 }
