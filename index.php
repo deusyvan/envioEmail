@@ -1,5 +1,16 @@
 <?php
-
+if (isset($_POST['nome']) && !empty($_POST['nome'])){
+    
+    $nome = addslashes($_POST['nome']);
+    $email = addslashes($_POST['email']);
+    $msg = addslashes($_POST['msg']);
+    
+    $para = "deusyvan@gmail.com";
+    $assunto = "Pergunta do Contato";
+    $corpo = "Nome: ".$nome." - E-mail: ".$email." - Mensagem: ".$msg;
+    
+    
+}
 
 ?>
 
